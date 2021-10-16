@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+html {
+    font-family: 'Source Sans Pro';
+    background-color: #ececec;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+hr {
+    margin: 0;
+}
+
+.event {
+    height: 62rem;
+    background: linear-gradient(45deg, #ade5fc, #e1a2d4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-background {
+    width: 43%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.text h1 {
+    font-size: 3.3rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.text p {
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.text h3{
+    margin: 2rem 0em;
+    font-weight: 500;
+}
+
+.text a {
+    color: black;
+    font-size: 1.2rem;
+}
+
+#learn-more {
+    width: 37.5%;
+    align-self: center;
+    position: relative;
+    top: 5em;
+    background-color: transparent;
+    padding: 1.2em 1.5em;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    border: 1px solid grey;
+    transition: border-color 0.2s, color 0.2s, background-color 0.2s ease-in-out;
+}
+
+#learn-more:active {
+    background-color: #00e1ff31;
+}
+
+#learn-more:hover {
+    border-color: #00e1ff;
+    color: #00e1ff;
+}
+
+#logo {
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10%;
+}
+
+#calendars {
+    margin: 0;
+}
+
+#Convidados{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 10vw;
+}
+
+#Convidados .convidado{
+    margin: 2vh 5vw;
+}
+
+#Convidados h2{
+    width: 100%;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Convidados .convidado img{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;    
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+#Convidados .convidado .saibaMaisConvidado{
+    width: 75%;
+    border-radius: 999px;
+    border: 1px solid #3d3d3d85;
+    line-height: 1.8;
+    font-size: 1.7rem;
+    font-weight: 300;    
+    cursor: pointer;
+    color: #3d3d3d;
+    transition: 0.6s;
+    margin: 0 auto;
+}
+#Convidados .convidado .saibaMaisConvidado:hover{
+    border: 1px solid #714799;
+    color: #714799;
+}
+
+#Convidados .convidado h3{
+    font-weight: 200;
+    font-size: 2.3rem;
+    margin: 10px 0;
+}
+
+
+#Aviso{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000c2;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+#Aviso .modal{
+    background-color: #efe6e6;
+    border-radius: 1em;
+    padding: 1em 1.2em;
+    width: 50vw;
+}
+#Aviso .modal h3{
+    margin: 1rem 0;
+    font-size: 2.3rem;
+}
+
+#Aviso .modal p{
+    font-size: 1.3rem;
+}
+
+
+
+/*
+#rodape {
+    display: flex;
+    justify-content: center;
+}
+
+#rodape .cartao{
+    border-width: 1px;
+    text-align: center;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 5px;
+}
+
+.icone {
+    margin-right: 2rem;
+    flex-direction: row;
+}
+
+#rodape ul.icone {
+    display: inline-block;
+    padding-right: 75rem;
+}*/
