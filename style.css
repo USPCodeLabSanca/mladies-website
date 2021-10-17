@@ -11,7 +11,7 @@ img{-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-
 
 html {
     font-family: 'Source Sans Pro';
-    background-color: #ececec;
+    background-color: whitesmoke;
     scroll-behavior: smooth;
 }
 
@@ -22,6 +22,60 @@ body {
 
 hr {
     margin: 0;
+}
+
+header {
+    height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(110, 110, 110);
+}
+
+nav a {
+    margin-right: 12rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+nav a,
+nav a:after,
+nav a:before {
+  transition: all .5s;
+}
+
+.nav-social a{
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+nav.stroke a {
+  position: relative;
+}
+
+nav a:hover {
+    font-size: 1.5rem;
+}
+
+nav.stroke a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.stroke a:hover:after {
+  width: 100%;
 }
 
 .event {
@@ -35,7 +89,7 @@ hr {
 .text-background {
     width: 43%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +161,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #fcfcfc;
+    background-color: whitesmoke;
     flex-wrap: wrap;
     text-align: center;
     padding: 0 10vw;
@@ -150,6 +204,7 @@ hr {
 #Convidados .convidado .saibaMaisConvidado:hover{
     border: 1px solid #8479aa;
     color: #8c81b1;
+}
 
 
 #Convidados .convidado h3 {
@@ -157,6 +212,7 @@ hr {
     font-size: 2.3rem;
     margin: 10px 0;
 }
+
 /*Responsivo ========================= */
 
 @media screen and (max-width: 600px)  {
@@ -181,7 +237,7 @@ hr {
 }
 
 #Aviso .modal {
-    background-color: #efe6e6;
+    background-color: whitesmoke;
     border-radius: 1em;
     padding: 1em 1.2em;
     width: 50vw;
@@ -196,36 +252,67 @@ hr {
     font-size: 1.3rem;
 }
 
-#rodape {
-    height: auto;
-    padding: 0 10vw;
+#committee {
+    font-weight: 200;
+    margin: 6rem;
 }
 
-#footer-content {
+#committee h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+#committee li {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+#committee b {
+    font-weight: 500;
+}
+
+footer {
+    margin: 1.3rem;
+    height: 16vh;
     display: flex;
-    justify-content: center;
-}
-
-#footer-content .social {
-    text-align: center;
-    padding: 25px 0;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 200;
+    font-size: 1.2rem;
     color: #4b4c4d;
 }
 
-#footer-content .social a {
-    font-size: 24px;
+footer ul {
+    margin: 0.5rem;
+}
+
+footer a {
+    color: #c32ad1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #9300a0;
+}
+
+.footer-social a {
+    font-size: 2rem;
     color: inherit;
     width: 40px;
-    height: 40px;
     line-height: 38px;
     display: inline-block;
     text-align: center;
-    margin: 0 8px;
     opacity: 0.75;
-    transition: all 100ms ease-in;
+    transition: all 200ms ease-in-out;
 }
 
-#footer-content .social a:hover {
+.footer-social a:hover {
     border-color: #00e1ff;
     color: #00e1ff;
+}
+
+footer p {
+    margin: 1.3rem;
+    font-size: 1.2rem;
 }
