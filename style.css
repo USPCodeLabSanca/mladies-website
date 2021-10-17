@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+/* Remove drag fantasma das imagens */
+img{-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;}
+/* Scroll*/
+::-webkit-scrollbar {width: 7px;}
+::-webkit-scrollbar-track {background: #f5eeee;}
+::-webkit-scrollbar-thumb {background: #888888df;}
+::-webkit-scrollbar-thumb:hover {background: #4d4c4c; }
+
 html {
     font-family: 'Source Sans Pro';
     background-color: #ececec;
@@ -64,8 +73,7 @@ hr {
 #learn-more {
     width: 37.5%;
     align-self: center;
-    position: relative;
-    top: 5em;
+    margin-top: 2em;
     background-color: transparent;
     padding: 1.2em 1.5em;
     border-radius: 30px;
@@ -99,6 +107,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #fcfcfc;
     flex-wrap: wrap;
     text-align: center;
     padding: 0 10vw;
@@ -121,11 +130,7 @@ hr {
 #Convidados .convidado img {
     width: 13vw;
     height: 13vw;
-    border-radius: 50%;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
+    border-radius: 50%;    
 }
 
 #Convidados .convidado .saibaMaisConvidado {
@@ -133,33 +138,46 @@ hr {
     border-radius: 999px;
     border: 1px solid #3d3d3d85;
     line-height: 1.8;
-    font-size: 1.7rem;
-    font-weight: 300;
+    font-size: 1.3rem;
+    font-weight: 300;    
     cursor: pointer;
     color: #3d3d3d;
     transition: 0.6s;
     margin: 0 auto;
+    user-select: none
 }
 
-#Convidados .convidado .saibaMaisConvidado:hover {
-    border: 1px solid #714799;
-    color: #714799;
-}
+#Convidados .convidado .saibaMaisConvidado:hover{
+    border: 1px solid #8479aa;
+    color: #8c81b1;
+
 
 #Convidados .convidado h3 {
     font-weight: 200;
     font-size: 2.3rem;
     margin: 10px 0;
 }
+/*Responsivo ========================= */
 
-#Aviso {
-    display: flex;
+@media screen and (max-width: 600px)  {
+    #body{font-size: 10px;}
+    .convidado{width: 40vw;}
+}
+
+/* Fim Responsivo ==================== */
+
+#Aviso{
+    display: none;
     height: 100vh;
     width: 100vw;
-    background-color: #000000c2;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(0deg, #2a27276e, #2a272726);
     justify-content: center;
     align-items: center;
     position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
 }
 
 #Aviso .modal {
