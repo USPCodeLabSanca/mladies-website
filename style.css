@@ -60,7 +60,7 @@ hr {
     margin-bottom: 0;
 }
 
-.text h3{
+.text h3 {
     margin: 2rem 0em;
     font-weight: 500;
 }
@@ -103,8 +103,8 @@ hr {
     margin: 0;
 }
 
-#Convidados{
-    display:flex;
+#Convidados {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #fcfcfc;
@@ -113,11 +113,11 @@ hr {
     padding: 0 10vw;
 }
 
-#Convidados .convidado{
+#Convidados .convidado {
     margin: 2vh 5vw;
 }
 
-#Convidados h2{
+#Convidados h2 {
     width: 100%;
     font-weight: 300;
     font-size: 3rem;
@@ -127,13 +127,13 @@ hr {
     justify-content: center;
 }
 
-#Convidados .convidado img{
+#Convidados .convidado img {
     width: 13vw;
     height: 13vw;
     border-radius: 50%;    
-
 }
-#Convidados .convidado .saibaMaisConvidado{
+
+#Convidados .convidado .saibaMaisConvidado {
     width: 75%;
     border-radius: 999px;
     border: 1px solid #3d3d3d85;
@@ -146,13 +146,13 @@ hr {
     margin: 0 auto;
     user-select: none
 }
+
 #Convidados .convidado .saibaMaisConvidado:hover{
     border: 1px solid #8479aa;
     color: #8c81b1;
 
-}
 
-#Convidados .convidado h3{
+#Convidados .convidado h3 {
     font-weight: 200;
     font-size: 2.3rem;
     margin: 10px 0;
@@ -179,43 +179,53 @@ hr {
     top: 0;
     left: 0;
 }
-#Aviso .modal{
+
+#Aviso .modal {
     background-color: #efe6e6;
     border-radius: 1em;
     padding: 1em 1.2em;
     width: 50vw;
 }
-#Aviso .modal h3{
+
+#Aviso .modal h3 {
     margin: 1rem 0;
     font-size: 2.3rem;
 }
 
-#Aviso .modal p{
+#Aviso .modal p {
     font-size: 1.3rem;
 }
 
-
-
-/*
 #rodape {
+    height: auto;
+    padding: 0 10vw;
+}
+
+#footer-content {
     display: flex;
     justify-content: center;
 }
 
-#rodape .cartao{
-    border-width: 1px;
+#footer-content .social {
     text-align: center;
-    border-style: solid;
-    border-color: grey;
-    border-radius: 5px;
+    padding: 25px 0;
+    color: #4b4c4d;
 }
 
-.icone {
-    margin-right: 2rem;
-    flex-direction: row;
-}
-
-#rodape ul.icone {
+#footer-content .social a {
+    font-size: 24px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
     display: inline-block;
-    padding-right: 75rem;
-}*/
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+    transition: all 100ms ease-in;
+}
+
+#footer-content .social a:hover {
+    border-color: #00e1ff;
+    color: #00e1ff;
+}
