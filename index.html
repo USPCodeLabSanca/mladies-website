@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>MLadies</title>
 </head>
 <body>
     <div class="event">
@@ -46,32 +47,39 @@
         </div>
         <img id="logo" src="./logo.svg" alt="Logo do Data">
     </div>
-    <hr/>
+    <!-- <hr/> -->
     <section id="Convidados">
         <h2>Convidados</h2>
 
         <div class="convidado">
             <img src="https://pbs.twimg.com/media/ELHZX_iWsAUWAnn.jpg" alt="">
             <h3>Pessoa 1</h3>
-            <div class="saibaMaisConvidado" >Saiba mais</div>
+            <div class="saibaMaisConvidado" >Descrição</div>
         </div>
         <div class="convidado">
             <img src="https://pbs.twimg.com/media/ELHZX_iWsAUWAnn.jpg" alt="">
             <h3>Pessoa 2</h3>
-            <div class="saibaMaisConvidado" >Saiba mais</div>
+            <div class="saibaMaisConvidado" >Descrição</div>
         </div>
         <div class="convidado">
             <img src="https://pbs.twimg.com/media/ELHZX_iWsAUWAnn.jpg" alt="">
             <h3>Pessoa 3</h3>
-            <div class="saibaMaisConvidado" >Saiba mais</div>
+            <div class="saibaMaisConvidado" >Descrição</div>
         </div>
         <div class="convidado">
             <img src="https://pbs.twimg.com/media/ELHZX_iWsAUWAnn.jpg" alt="">
             <h3>Pessoa 4</h3>
-            <div class="saibaMaisConvidado" >Saiba mais</div>
+            <div class="saibaMaisConvidado" >Descrição</div>
         </div>
 
     </section>
+    <div id="Aviso">
+        <div class="modal">
+            <h3>Nome da pessoa</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, deserunt. Voluptas quod similique doloribus voluptates corporis! Laudantium, hic facilis animi libero deleniti quibusdam, voluptate labore commodi impedit necessitatibus modi dicta. </p>
+        </div>
+    </div>
+
     <hr>
     <!-- <footer id="rodape">
         <ul class="icone">
@@ -95,4 +103,19 @@
     </footer> -->
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    $(".saibaMaisConvidado").on("click", ()=>{
+        $("#Aviso").css("display","flex").hide().fadeIn(500);        
+    })
+    $("#Aviso").on("click",()=>{
+        console.log(event.target);
+        if($(event.target).is("#Aviso")){
+            $("#Aviso").fadeOut(500);
+        }
+    })
+
+
+</script>
 </html>
