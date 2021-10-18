@@ -239,11 +239,13 @@ nav.stroke a:hover:after {
     border-radius: 1em;
     padding: 1em 1.2em;
     width: 50vw;
+    font-weight: 300;
 }
 
 #Aviso .modal h3 {
     margin: 1rem 0;
     font-size: 2.3rem;
+    font-weight: 300;
 }
 
 #Aviso .modal p {
@@ -270,10 +272,10 @@ nav.stroke a:hover:after {
 }
 
 footer {
-    margin: 1.3rem;
-    height: 16vh;
+    height: 18vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     font-weight: 200;
     font-size: 1.2rem;
