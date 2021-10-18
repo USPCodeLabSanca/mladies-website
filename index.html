@@ -17,17 +17,25 @@
 
 <body>
     <header>
-        <nav class="stroke">
+        <nav class="stroke pc">
             <a href="#event">Event</a>
             <a href="#schedule">Schedule</a>
             <a href="#about">About</a>
         </nav>
-        <div class="nav-social">
+        <div class="nav-social pc">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
-    </header>
+                
+    </header>    
+    <img src="logo.svg"  class="menuMobile TopDiff"/>
+    <div class="nav-socialMobile TopDiff">
+        <a href="#event">Event</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#about">About</a>
+    </div>
+
     <div class="event">
         <div class="text-background">
             <div class="text">
@@ -116,7 +124,7 @@
     </section>
     <hr>
     <footer>
-        <div class="footer-social">
+        <div class="footer-social ">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -132,11 +140,35 @@
         $("#Aviso").css("display","flex").hide().fadeIn(500);        
     })
     $("#Aviso").on("click",()=>{
-        console.log(event.target);
+
         if($(event.target).is("#Aviso")){
             $("#Aviso").fadeOut(500);
         }
     })
+
+  
+    $(".menuMobile").on("click",()=>{
+        $(".nav-socialMobile a").animate({"left" : "0"}, 350);
+    })
+    $("body").on("click",()=>{
+
+        if(!$(event.target).is(".nav-socialMobile a") 
+            && $(".nav-socialMobile a").css("left") == "0px"){
+            $(".nav-socialMobile a").animate({"left" : "-25vw"}, 350);            
+        }
+    })
+    $(window).on('scroll', ()=>{     
+        if($("body").width() < 600){
+
+            if($(window).scrollTop() >= $(window).height() * 0.26){
+                $("img.menuMobile").removeClass("TopDiff");
+                $("div.nav-socialMobile").removeClass("TopDiff");
+            }else{
+                $("img.menuMobile").addClass("TopDiff");
+                $("div.nav-socialMobile").addClass("TopDiff");
+            }
+        }
+    });
 
 
 </script>
