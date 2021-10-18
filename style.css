@@ -344,8 +344,10 @@ footer p {
     left: -25vw;
 }
 
-img.TopDiff{
+i.TopDiff{
     top: 28vh;
+    font-size: 2.5rem;
+    color:#5c5c5c;
     position: absolute;
     display: none;
 }
@@ -362,6 +364,8 @@ div.TopDiff{
     .text-background{width: 100%;}
     .event img{height: 25vh;}
     #logo{margin-top: 2vh;}
+    body{font-size: 16px;}
+    #learn-more{width: 41.5%;}
 }
 
 
@@ -372,7 +376,7 @@ div.TopDiff{
     .convidado{width: 40vw;}
     #Convidados .convidado img{width: 20vw; height: 20vw;}
     header{display: none;}    
-    img.menuMobile{display: flex;}
+    i.menuMobile{display: flex;}
     div.nav-socialMobile{display: flex;} 
 }
 
