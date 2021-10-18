@@ -272,6 +272,7 @@ nav.stroke a:hover:after {
 }
 
 footer {
+    margin: 1.5rem;
     height: 18vh;
     display: flex;
     align-items: center;
