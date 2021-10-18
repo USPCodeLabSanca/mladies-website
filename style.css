@@ -316,6 +316,7 @@ footer a:hover {
 footer p {
     margin: 1.3rem;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .menuMobile{
