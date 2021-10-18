@@ -30,11 +30,16 @@ header {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(110, 110, 110);    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
 }
 
 nav a {
-    margin-right: 12rem;
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.4rem;
@@ -79,11 +84,12 @@ nav.stroke a:hover:after {
 }
 
 .event {
-    height: 62rem;
+
     background: linear-gradient(45deg, #ade5fc, #e1a2d4);
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 
 .text-background {
@@ -103,7 +109,7 @@ nav.stroke a:hover:after {
 }
 
 .text h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
     font-weight: 300;
     margin-bottom: 0;
 }
@@ -213,14 +219,6 @@ nav.stroke a:hover:after {
     margin: 10px 0;
 }
 
-/*Responsivo ========================= */
-
-@media screen and (max-width: 600px)  {
-    #body{font-size: 10px;}
-    .convidado{width: 40vw;}
-}
-
-/* Fim Responsivo ==================== */
 
 #Aviso{
     display: none;
@@ -316,3 +314,71 @@ footer p {
     margin: 1.3rem;
     font-size: 1.2rem;
 }
+
+.menuMobile{
+    position: fixed;
+    top: 30px;
+    left: 10px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.nav-socialMobile{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25vw;
+    position: fixed;
+    top: 80px;
+}
+
+.nav-socialMobile a{
+    margin: 0.5rem;
+    width: 20vw;
+    padding: 0.5rem 0.8rem;
+    background-color: #6e6e6e;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.4em;
+    position: relative;
+    left: -25vw;
+}
+
+i.TopDiff{
+    top: 28vh;
+    font-size: 2.5rem;
+    color:#5c5c5c;
+    position: absolute;
+    display: none;
+}
+div.TopDiff{
+    top: 35vh;
+    position: absolute;
+    display: none;
+}
+
+/*Responsivo ========================= */
+/*Resoluções 600px, 900px, 1280px ==== */
+
+@media screen and (max-width: 900px){
+    .text-background{width: 100%;}
+    .event img{height: 25vh;}
+    #logo{margin-top: 2vh;}
+    body{font-size: 16px;}
+    #learn-more{width: 41.5%;}
+}
+
+
+
+@media screen and (max-width: 600px)  {
+    .text-background{width: 100%;}
+    body{font-size: 14px;}
+    .convidado{width: 40vw;}
+    #Convidados .convidado img{width: 20vw; height: 20vw;}
+    header{display: none;}    
+    i.menuMobile{display: flex;}
+    div.nav-socialMobile{display: flex;} 
+}
+
+/* Fim Responsivo ==================== */
+
