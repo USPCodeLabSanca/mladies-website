@@ -343,6 +343,8 @@ footer p {
     background-color: #fff;
     padding: 1rem 2rem;
     border-radius: 14px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 #cronograma .cardHorario .content{
