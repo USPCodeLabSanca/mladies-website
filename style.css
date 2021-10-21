@@ -18,6 +18,7 @@ html {
 body {
     margin: 0;
     height: 100vh;
+    position: absolute;
 }
 
 hr {
@@ -176,7 +177,7 @@ nav.stroke a:hover:after {
 #Convidados .convidado {
     margin: 2vh 5vw;
 }
-
+#cronograma h2,
 #Convidados h2 {
     width: 100%;
     font-weight: 300;
@@ -319,50 +320,71 @@ footer p {
     text-align: center;
 }
 
-.menuMobile{
-    position: fixed;
-    top: 30px;
-    left: 10px;
-    width: 40px;
-    cursor: pointer;
+#cronograma h2{
+    justify-content: left;
+}
+#cronograma{
+    justify-content: space-around;    
+    flex-wrap: wrap;
+    padding: 0 6rem;
+    display: flex;
+    font-weight: 300;
 }
 
-.nav-socialMobile{
-    background-color: transparent;
+#cronograma .cardHorario{
+    width: 25%;
+    border-radius: 15px;
+    padding: 2px;
+    background: linear-gradient(45deg, #ade5fc, #e1a2d4);
+    margin-bottom: 5vh;
+}
+
+#cronograma .cardHorario .interiorCard{
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 14px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#cronograma .cardHorario .content{
+    margin: 1rem 0;
+    font-size: 1.15rem;
+}
+
+#cronograma .cardHorario .header{
     display: flex;
     flex-wrap: wrap;
-    width: 25vw;
-    position: fixed;
-    top: 80px;
+    justify-content: space-between;
+}
+#cronograma .cardHorario .header h4{
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
-.nav-socialMobile a{
-    margin: 0.5rem;
-    width: 20vw;
-    padding: 0.5rem 0.8rem;
-    background-color: #6e6e6e;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 0.4em;
-    position: relative;
-    left: -25vw;
+#cronograma .cardHorario .header h4,
+#cronograma .cardHorario .header p{
+    margin: 0;
 }
-
-i.TopDiff{
-    top: 28vh;
-    font-size: 2.5rem;
-    color:#5c5c5c;
-    position: absolute;
-    display: none;
-}
-div.TopDiff{
-    top: 35vh;
-    position: absolute;
-    display: none;
+#cronograma .cardHorario .footer{
+    justify-content: end;   
+    user-select: none;
+    transition: 0.6s;
+    cursor: pointer; 
+    display: flex;
 }
 
 /*Responsivo ========================= */
 /*Resoluções 600px, 900px, 1280px ==== */
+
+@media screen and (max-width: 1280px){
+    #cronograma{justify-content: space-between;}
+    #cronograma .cardHorario{width: 35%;}
+}
+
+@media screen and (max-width: 1024px){
+    #cronograma .cardHorario{width: 45%;}
+}
 
 @media screen and (max-width: 900px){
     .text-background{width: 100%;}
@@ -372,17 +394,16 @@ div.TopDiff{
     #learn-more{width: 41.5%;}
 }
 
-
-
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 650px)  {
     .text-background{width: 100%;}
     body{font-size: 14px;}
     .convidado{width: 40vw;}
     #Convidados .convidado img{width: 20vw; height: 20vw;}
-    header{display: none;}    
+    nav{width: 85vw;}
+    .nav-social{display: none;}     
     i.menuMobile{display: flex;}
     div.nav-socialMobile{display: flex;} 
+    #cronograma .cardHorario{width: 100%;}
 }
 
 /* Fim Responsivo ==================== */
-
