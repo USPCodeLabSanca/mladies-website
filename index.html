@@ -13,6 +13,7 @@
     <meta property="og:url" content="http://ef6f-2804-14d-8084-9f32-45df-234d-d7fa-7cc4.ngrok.io/" />
     <meta property="og:description" content="Evento para mulheres sobre Data Science e Machine Learning" />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,13 +35,6 @@
         </div>
                 
     </header>    
-    <i class="fas fa-bars menuMobile TopDiff"></i>    
-    <div class="nav-socialMobile TopDiff">
-        <a href="#event">Event</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#about">About</a>
-    </div>
-
     <div class="event">
         <div class="text-background">
             <div class="text">
@@ -82,6 +76,7 @@
                     value="Learn More" />
             </div>
         </div>
+
         <img id="logo" src="./assets/logo.svg" alt="Logo do Data">
     </div>
     <!-- <hr/> -->
@@ -111,6 +106,43 @@
         </div>
 
     </section>
+
+
+    <secttion id="cronograma">    
+        <h2>Cronograma</h2>
+
+        <div class="cardHorario">
+            <div class="interiorCard">
+
+                <div class="header">
+                    <h4>Palestra 1</h4>
+                <p>11:40 - 14:55</p>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum quod. Dicta sunt officia magnam cumque autem quas error dolores perferendis suscipit laudantium temporibus quibusdam non rerum fuga, ullam consequuntur.
+                </div>
+                <div class="footer">
+                    <div class="link">Acessar</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardHorario">
+            <div class="interiorCard">
+                <div class="header">
+                    <h4>Palestra 2</h4>
+                    <p>15:00 - 18:55</p>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum quod. Dicta sunt officia magnam cumque autem quas error dolores perferendis suscipit laudantium temporibus quibusdam non rerum fuga, ullam consequuntur.
+                </div>
+                <div class="footer">
+                    <div class="link">Acessar</div>
+                </div>
+            </div>
+        </div>
+    </secttion>
+
     <div id="Aviso">
         <div class="modal">
             <h3>Nome da pessoa</h3>
@@ -149,31 +181,7 @@
         if($(event.target).is("#Aviso")){
             $("#Aviso").fadeOut(500);
         }
-    })
-
-  
-    $(".menuMobile").on("click",()=>{
-        $(".nav-socialMobile a").animate({"left" : "0"}, 350);
-    })
-    $("body").on("click",()=>{
-
-        if(!$(event.target).is(".nav-socialMobile a") 
-            && $(".nav-socialMobile a").css("left") == "0px"){
-            $(".nav-socialMobile a").animate({"left" : "-25vw"}, 350);            
-        }
-    })
-    $(window).on('scroll', ()=>{     
-        if($("body").width() < 600){
-
-            if($(window).scrollTop() >= $(window).height() * 0.26){
-                $("img.menuMobile").removeClass("TopDiff");
-                $("div.nav-socialMobile").removeClass("TopDiff");
-            }else{
-                $("img.menuMobile").addClass("TopDiff");
-                $("div.nav-socialMobile").addClass("TopDiff");
-            }
-        }
-    });
+    })   
 
 
 </script>
