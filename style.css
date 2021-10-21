@@ -93,6 +93,7 @@ nav.stroke a:hover:after {
     flex-wrap: wrap-reverse;
 }
 
+
 .text-background {
     width: 43%;
     height: 100%;
@@ -129,6 +130,26 @@ nav.stroke a:hover:after {
 .text a {
     color: black;
     font-size: 1.2rem;
+}
+
+.about {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5em 1em;
+}
+
+.about-text{
+    width: 50%;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+#image-about {
+    width: 20%;
+
 }
 
 #learn-more {
@@ -172,6 +193,7 @@ nav.stroke a:hover:after {
     flex-wrap: wrap;
     text-align: center;
     padding: 0 10vw;
+    margin-bottom: 5rem;
 }
 
 #Convidados .convidado {
@@ -186,6 +208,11 @@ nav.stroke a:hover:after {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+a.link {
+    text-decoration: none;
+    color: #4b4c4d;
 }
 
 #Convidados .convidado img {
@@ -288,13 +315,13 @@ footer ul {
     margin: 0.5rem;
 }
 
-footer a {
+#codelab {
     color: #c32ad1;
     text-decoration: none;
     font-weight: 500;
 }
 
-footer a:hover {
+#codelab:hover {
     color: #9300a0;
 }
 
@@ -309,9 +336,28 @@ footer a:hover {
     transition: all 200ms ease-in-out;
 }
 
-.footer-social a:hover {
-    border-color: #00e1ff;
-    color: #00e1ff;
+.fa-facebook {
+    transition: all 200ms ease-in-out;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    transition: all 200ms ease-in-out;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-linkedin {
+    transition: all 200ms ease-in-out;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
 }
 
 footer p {
@@ -375,7 +421,12 @@ footer p {
 }
 
 /*Responsivo ========================= */
-/*Resoluções 600px, 900px, 1280px ==== */
+/*Resoluções 600px, 900px, 1280px, 1380px ==== */
+
+@media screen and (max-width: 1380px){
+    #image-about{width: 30%;}
+    .about-text{font-size: 1.5rem;}
+}
 
 @media screen and (max-width: 1280px){
     #cronograma{justify-content: space-between;}
@@ -384,6 +435,7 @@ footer p {
 
 @media screen and (max-width: 1024px){
     #cronograma .cardHorario{width: 45%;}
+    .about-text{font-size: 1.3rem;}
 }
 
 @media screen and (max-width: 900px){
@@ -392,6 +444,8 @@ footer p {
     #logo{margin-top: 2vh;}
     body{font-size: 16px;}
     #learn-more{width: 41.5%;}
+    .about-text {width: 70%;}
+    #image-about{width: 40%;}
 }
 
 @media screen and (max-width: 650px)  {
@@ -404,6 +458,8 @@ footer p {
     i.menuMobile{display: flex;}
     div.nav-socialMobile{display: flex;} 
     #cronograma .cardHorario{width: 100%;}
+    .about-text {width: 90%;line-height: 1;font-size: 1.5rem;}
+    #image-about{width: 60%;}
 }
 
 /* Fim Responsivo ==================== */
