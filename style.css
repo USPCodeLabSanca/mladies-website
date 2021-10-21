@@ -221,7 +221,7 @@ nav.stroke a:hover:after {
 }
 
 
-#Aviso{
+.aviso{
     display: none;
     height: 100vh;
     width: 100vw;
@@ -235,7 +235,7 @@ nav.stroke a:hover:after {
     left: 0;
 }
 
-#Aviso .modal {
+.aviso .modal {
     background-color: whitesmoke;
     border-radius: 1em;
     padding: 1em 1.2em;
@@ -243,13 +243,13 @@ nav.stroke a:hover:after {
     font-weight: 300;
 }
 
-#Aviso .modal h3 {
+.aviso .modal h3 {
     margin: 1rem 0;
     font-size: 2.3rem;
     font-weight: 300;
 }
 
-#Aviso .modal p {
+.aviso .modal p {
     font-size: 1.3rem;
 }
 

@@ -24,9 +24,9 @@
 <body>
     <header>
         <nav class="stroke pc">
-            <a href="#event">Event</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#about">About</a>
+            <a href="#event">Evento</a>
+            <a href="#schedule">Cronograma</a>
+            <a href="#about">Sobre</a>
         </nav>
         <div class="nav-social pc">
             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -68,10 +68,10 @@
                     Nunc vitae fermentum risus, at pretium purus. Maecenas hendrerit laoreet sem id volutpat.
                 </p>
 
-                <h3>Nov 9th 04:00PM (-03:00 UTC)</h3>
-                <a href="https://www.youtube.com/" target="blank">Event link</a>
+                <h3>9 de novembro 16:00 (Horário de Brasília)</h3>
+                <a href="https://youtu.be/v3Pw3IH7vwU" target="blank">Link do evento</a>
                 <p id="calendars"><a href="https://www.google.com/intl/pt-BR/calendar/about/">Google Calendar</a> / <a
-                        href="./assets/file.txt" download>Other Calendar Apps</a></p>
+                        href="./assets/file.txt" download>Outros apps de calendário</a></p>
                 <input id="learn-more" type="button" onClick="document.getElementById('Convidados').scrollIntoView();"
                     value="Learn More" />
             </div>
@@ -84,29 +84,37 @@
         <h2>Convidados</h2>
 
         <div class="convidado">
-            <img src="https://pbs.twimg.com/media/ELHZX_iWsAUWAnn.jpg" alt="">
-            <h3>Pessoa 1</h3>
-
-            <div class="saibaMaisConvidado" >Descrição</div>
+            <img src="./assets/elayni.png" alt="Foto de perfil da Elayni Franco">
+            <h3>Elayni Franco</h3>
+            <div class="saibaMaisConvidado" id="elayni" >Descrição</div>
         </div>
         <div class="convidado">
-            <img src="https://pbs.twimg.com/media/ELHZX_iWsAUWAnn.jpg" alt="">
-            <h3>Pessoa 2</h3>
-            <div class="saibaMaisConvidado" >Descrição</div>
+            <img src="./assets/mirian.jpg" alt="Foto de perfil da Mirian Silva">
+            <h3>Mirian Silva</h3>
+            <div class="saibaMaisConvidado" id="mirian">Descrição</div>
         </div>
         <div class="convidado">
-            <img src="https://pbs.twimg.com/media/ELHZX_iWsAUWAnn.jpg" alt="">
-            <h3>Pessoa 3</h3>
-            <div class="saibaMaisConvidado" >Descrição</div>
+            <img src="./assets/sandra.png" alt="Foto de perfil da Sandra Avila">
+            <h3>Sandra Avila</h3>
+            <div class="saibaMaisConvidado" id="sandra" >Descrição</div>
         </div>
         <div class="convidado">
-            <img src="https://pbs.twimg.com/media/ELHZX_iWsAUWAnn.jpg" alt="">
-            <h3>Pessoa 4</h3>
-            <div class="saibaMaisConvidado" >Descrição</div>
+            <img src="./assets/meire.jpg" alt="Foto de perfil da Meire Fortunato">
+            <h3>Meire Fortunato</h3>
+            <div class="saibaMaisConvidado" id="meire">Descrição</div>
+        </div>
+        <div class="convidado">
+            <img src="./assets/leo.jpg" alt="Foto de perfil da Leo Sampaio">
+            <h3>Leo Sampaio</h3>
+            <div class="saibaMaisConvidado" id="leo">Descrição</div>
+        </div>
+        <div class="convidado">
+            <img src="./assets/jessica.png" alt="Foto de perfil da Jéssica Sena">
+            <h3>Jéssica Sena</h3>
+            <div class="saibaMaisConvidado" id="jessica">Descrição</div>
         </div>
 
     </section>
-
 
     <secttion id="cronograma">    
         <h2>Cronograma</h2>
@@ -143,20 +151,85 @@
         </div>
     </secttion>
 
-    <div id="Aviso">
+    <div id="elayni-aviso" class="aviso">
         <div class="modal">
-            <h3>Nome da pessoa</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, deserunt. Voluptas quod similique doloribus voluptates corporis! Laudantium, hic facilis animi libero deleniti quibusdam, voluptate labore commodi impedit necessitatibus modi dicta. </p>
+            <h3>Elayni Franco</h3>
+            <p>
+                Graduanda em Ciência de Dados e Inteligência Artificial pela UFPB, é estagiária em IA na Dataprev e PyLady, também possui bacharel e licenciatura em Enfermagem.
+            </p>
         </div>
     </div>
+
+    <div id="mirian-aviso" class="aviso">
+        <div class="modal">
+            <h3>Mirian Silva</h3>
+            <p>
+                AI Research Engineer na IBM Research. Estudante de Mestrado em Ciência da Computação na Universidade Federal de Minas Gerais (UFMG), com pesquisa focada nas áreas de AI Fairness e privacidade.
+                Bacharela em Matemática Computacional pela mesmo universidade. Instrutora de Projetos Guiados na plataforma de e-learning do Coursera.
+                Membra da Comunidade Black in AI, iniciativa que visa impulsionar e aumentar a presença de pessoas pretas no campo de Inteligência Artificial, sendo também voluntária nas iniciativas Women in Machine Learning e LatinX in AI.
+                Completamente envolvida em ações que promovem o incentivo de mulheres em áreas de STEM, sendo cofundadora da grupo Girls Support Girls Community, originalmente formado dentro da UFMG.
+            </p>
+        </div>
+    </div>
+
+    <div id="sandra-aviso" class="aviso">
+        <div class="modal">
+            <h3>Sandra Avila</h3>
+            <p>
+                Sandra Avila é professora no Instituto de Computação, da Universidade Estadual de Campinas, desde 2017.
+                É doutora em Ciência da Computação, com duplo diploma, pela UFMG e pela Sorbonne Université, em 2013.
+                Suas pesquisas estão voltadas para Inteligência Artificial, mais especificamente Aprendizado de Máquina, com ênfase na Saúde, Análise de conteúdo sensível e Agricultura de precisão.
+                Em 2018, 2019 e 2020, recebeu o prêmio Google Latin America Research Awards.
+                Em 2020, foi selecionada para representar o Brasil no BRICS Young Scientists Forum, na área de Inteligência Artificial.
+            </p>
+        </div>
+    </div>
+
+    <div id="meire-aviso" class="aviso">
+        <div class="modal">
+            <h3>Meire Fortunato</h3>
+            <p>
+                Meire Fortunato é cientista pesquisadora na DeepMind em Londres desde 2016, trabalhando com Aprendizado de Máquina e Inteligência Artificial.
+                Meire concluiu o bacharelado e o mestrado em Matemática na Unicamp, em 2008 e 2010, respectivamente.
+                Em 2016, Meire recebeu seu doutorado em Matemática pela Universidade da Califórnia em Berkeley, com tese sobre métodos numéricos para a geração de malhas.
+                Meire tem experiência em aprendizagem supervisionada e de reforço, com ênfase em tópicos como modelagem de sequências, exploração e blocos de memória.
+                Atualmente, seu foco de pesquisa é em como usar redes neurais para produzir simulações precisas e eficientes na área de ciências e engenharia.
+                Meire é membro do comitê geral e co-fundadora da Khipu.ai, um esforço para fortalecer a comunidade de IA na América Latina.
+            </p>
+        </div>
+    </div>
+
+    <div id="leo-aviso" class="aviso">
+        <div class="modal">
+            <h3>Leo Sampaio</h3>
+            <p>
+                A Leo Sampaio estuda desde 2015 modelagem de extratores de representações comuns entre desenhos e fotografias aplicados em reconhecimento, síntese e busca em ambos domínios.
+                Atualmente pesquisa o assunto como Doutoranda no ICMC-USP
+            </p>
+        </div>
+    </div>
+
+    <div id="jessica-aviso" class="aviso">
+        <div class="modal">
+            <h3>Jéssica Sena</h3>
+            <p>
+                Jéssica Sena é doutoranda em Ciência da Computação na UFMG e recipiente da bolsa Fulbright, uma das mais prestigiosas do mundo.
+                Jéssica atualmente está fazendo doutorado sanduíche no Departamento de Engenharia Biomédica da Universidade da Flórida, EUA, com a qual ela trabalha com monitoramento de pacientes em UTIs através do uso de Inteligência Artificial.
+                Ela tem mestrado em Ciência da Computação e graduação em Sistemas de Informação, ambos pela UFMG.
+                Seus interesses incluem machine learning, deep learning, sensores vestíveis, visão computacional e aplicação desses na área da saúde, biometria e vigilância
+            </p>
+        </div>
+    </div>
+
+
     <hr>
     <section id="committee">
-        <h2>Organizing Comittee</h2>
+        <h2>Comitê Organizador</h2>
         <ul>
             <li>Guilherme Lourenço Toledo - Universidade de São Paulo</li>
             <li>Luísa Balleroni Shimabucoro - Universidade de São Paulo</li>
             <li>Victor Henrique - Universidade de São Paulo</li>
-            <li><b>with support by</b> João Guilherme Araújo - Universidade de São Paulo</li>
+            <li><b>com apoio de</b> João Guilherme Araújo - Universidade de São Paulo</li>
         </ul>
     </section>
     <hr>
@@ -166,23 +239,19 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
-        <p>@ Data ICMC. Developed with ❤ by <a id="codelab" href="https://codelab-icmc.netlify.app/ target="blank"">USPCodeLab Sanca</a></p>
+        <p>@ Data ICMC. Developed with ❤ by <a id="codelab" href="https://codelab-icmc.netlify.app/" target="blank">USPCodeLab Sanca</a></p>
     </footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-
-    $(".saibaMaisConvidado").on("click", ()=>{
-        $("#Aviso").css("display","flex").hide().fadeIn(500);        
+    $(".saibaMaisConvidado").on("click", (event)=> {
+        $("#" + event.target.id + "-aviso").css("display","flex").hide().fadeIn(500);
     })
-    $("#Aviso").on("click",()=>{
 
-        if($(event.target).is("#Aviso")){
-            $("#Aviso").fadeOut(500);
-        }
-    })   
-
-
+    $(".aviso").on("click",()=>{
+        if($(event.target).is(".aviso"))
+            $(".aviso").fadeOut(500);
+    })
 </script>
 </html>
