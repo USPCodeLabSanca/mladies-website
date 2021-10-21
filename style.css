@@ -172,6 +172,7 @@ nav.stroke a:hover:after {
     flex-wrap: wrap;
     text-align: center;
     padding: 0 10vw;
+    margin-bottom: 3vh;
 }
 
 #Convidados .convidado {
