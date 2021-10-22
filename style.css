@@ -85,7 +85,6 @@ nav.stroke a:hover:after {
 }
 
 .event {
-
     background: linear-gradient(45deg, #ade5fc, #e1a2d4);
     overflow: hidden;
     display: flex;
@@ -105,6 +104,7 @@ nav.stroke a:hover:after {
 }
 
 .text {
+    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     width: 85%;
@@ -120,6 +120,10 @@ nav.stroke a:hover:after {
     font-weight: 300;
     line-height: 1.5;
     margin-bottom: 0;
+}
+
+.text p a {
+    font-size: inherit;
 }
 
 .text h3 {
@@ -181,10 +185,6 @@ nav.stroke a:hover:after {
     bottom: 10%;
 }
 
-#calendars {
-    margin: 0;
-}
-
 #Convidados {
     display: flex;
     flex-direction: row;
@@ -213,6 +213,7 @@ nav.stroke a:hover:after {
 a.link {
     text-decoration: none;
     color: #4b4c4d;
+    font-weight: bold;
 }
 
 #Convidados .convidado img {
