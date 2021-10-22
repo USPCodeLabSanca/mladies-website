@@ -250,8 +250,8 @@ a.link {
 
 .aviso{
     display: none;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     backdrop-filter: blur(3px);
     background: linear-gradient(0deg, #2a27276e, #2a272726);
     justify-content: center;
@@ -268,6 +268,8 @@ a.link {
     padding: 1em 1.2em;
     width: 50vw;
     font-weight: 300;
+    max-height: 80%;
+    overflow-y: auto;
 }
 
 .aviso .modal h3 {
@@ -451,7 +453,7 @@ footer p {
 @media screen and (max-width: 650px)  {
     .text-background{width: 100%;}
     body{font-size: 14px;}
-    .convidado{width: 40vw;}
+    .convidado{width: 51vw;}
     #Convidados .convidado img{width: 20vw; height: 20vw;}
     nav{width: 85vw;}
     .nav-social{display: none;}     
@@ -460,6 +462,11 @@ footer p {
     #cronograma .cardHorario{width: 100%;}
     .about-text {width: 90%;line-height: 1;font-size: 1.5rem;}
     #image-about{width: 60%;}
+}
+@media screen and (max-width: 500px) {
+    .aviso .modal{
+        width: 80%;
+    }
 }
 
 /* Fim Responsivo ==================== */
